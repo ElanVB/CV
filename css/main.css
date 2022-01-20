@@ -35,7 +35,7 @@
  * -------------------------------------------------------------------
  */
 @import url("fonts.css");
-@import url("font-awesome/css/font-awesome.min.css");
+/* @import url("font-awesome/css/font-awesome.min.css"); */
 @import url("micons/micons.css");
 
 /**
@@ -87,7 +87,36 @@ a, a:visited {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+
 a:hover, a:focus, a:active {
+	color: #FF0077;
+	outline: 0;
+}
+
+#publications a, a:visited {
+	color: white;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#publications a:hover, a:focus, a:active {
+	color: #FF0077;
+	outline: 0;
+}
+
+#work a, a:visited {
+	color: white;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#work a:hover, a:focus, a:active {
 	color: #FF0077;
 	outline: 0;
 }
@@ -156,6 +185,12 @@ p.lead {
 	line-height: 1.8;
 	color: #888888;
 }
+p.lead span.bold {
+	color: #888888;
+	font-weight: bold;
+	font-style: normal;
+}
+
 @media only screen and (max-width:768px) {
 	p.lead {
 		font-size: 1.7rem;
@@ -1024,7 +1059,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #7d7d7d;
 }
 .section-intro {
-	max-width: 700px;
+	max-width: 65%;
+	/* max-width: 700px; */
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -1090,14 +1126,18 @@ header {
 header .row {
 	position: relative;
 	min-height: 66px;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
 }
+
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
+	min-width: 250px;
 	min-height: 66px;
 	position: absolute;
-	left: 90px;
+	left: 30px;
 	top: 0;
 }
 header .logo {
@@ -1228,7 +1268,9 @@ header .logo a {
 /* dropdown nav */
 .main-navigation {
 	background: #000000;
-	padding: 24px 30px 42px;
+	/* padding: 24px 20px 20px; */
+	/* padding: 24px 30px 42px; */
+	padding-left: 24px;
 	margin: 0;
 	width: 100%;
 	height: auto;
@@ -1263,27 +1305,83 @@ header .logo a {
  * header styles
  * ---------------------------------------------------------------
  */
-@media only screen and (max-width:1024px) {
+ /* @media only screen and (max-width:1024px) {
 	header .top-bar {
-		left: 60px;
+		left: 40px;
 	}
 }
 @media only screen and (max-width:768px) {
 	header .top-bar {
-		left: 50px;
+		left: 30px;
 	}
 }
 @media only screen and (max-width:600px) {
 	header .top-bar {
-		left: 35px;
+		left: 20px;
 	}
 }
 @media only screen and (max-width:400px) {
 	header .top-bar {
-		left: 25px;
+		left: 10px;
 	}
+} */
+
+
+/**
+ * CV download - (_layout.css)
+ * -------------------------------------------------------------------
+ */
+
+.top-cv-download {
+	display: block;
+	/* background: #000000; */
+	/* min-width: 220px; */
+	/* min-height: 66px; */
+	position: absolute;
+	left: 30px;
+	top: 0;
+	min-width: 250px;
 }
 
+.relative-button {
+	-moz-transition-duration: 0.2s, 0.2s;
+	-o-transition-duration: 0.2s, 0.2s;
+	-webkit-transition-duration: 0.2s, 0.2s;
+	-ms-transition-duration: 0.2s, 0.2s;
+	transition-duration: 0.2s, 0.2s;
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+
+/* .relative-button.is-clicked {
+	transform: translateY(100px);
+} */
+
+/**
+ * responsive:
+ * CV download
+ * ---------------------------------------------------------------
+ */
+ /* @media only screen and (max-width:1024px) {
+	header .top-cv-download {
+		left: 40px;
+	}
+}
+@media only screen and (max-width:768px) {
+	header .top-cv-download {
+		left: 30px;
+	}
+}
+@media only screen and (max-width:600px) {
+	header .top-cv-download {
+		left: 20px;
+	}
+}
+@media only screen and (max-width:400px) {
+	header .top-cv-download {
+		left: 10px;
+	}
+} */
 
 /**
  * ===================================================================
@@ -1417,6 +1515,10 @@ header .logo a {
 	color: #cc005f;
 }
 
+.intro-social li a i {
+	font-size: 1.5em;
+}
+
 /**
  * responsive:
  * Intro
@@ -1490,7 +1592,8 @@ header .logo a {
 #about {
 	background: #FFFFFF;
 	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-bottom: 6rem;
+	/* padding-bottom: 15rem; */
 }
 #about .section-intro {
 	margin-bottom: 3rem;
@@ -1502,15 +1605,44 @@ header .logo a {
 	margin-left: -30px;
 }
 .intro-info img {
-	height: 9rem;
-	width: 9rem;
+	/* height: 9rem;
+	width: 9rem; */
+	height: 10em;
+	width: 10em;
 	border-radius: 50%;
-	margin: .9rem 0 0 0;
+	margin: 1em;
+	/* margin: .9rem 0 0 0; */
 	float: left;
 }
+
+.reviewer-awards img {
+	width: 80%;
+	border-radius: 30px;
+	margin-left: 5em;
+}
+
+#education .intro-info i {
+	color: black;
+	float: left;
+	font-size: 5em;
+}
+
+#teaching .intro-info i {
+	color: black;
+	float: left;
+	font-size: 5em;
+}
+
+.intro-info i {
+	color: white;
+	float: left;
+	font-size: 5em;
+}
+
 .intro-info .lead {
 	text-align: left;
-	padding-left: 13rem;
+	padding-left: 10em;
+	/* padding-left: 13rem; */
 }
 
 .about-content {
@@ -1614,6 +1746,179 @@ header .logo a {
 
 /**
  * ===================================================================
+ * 12. Learn More
+ *
+ * -------------------------------------------------------------------
+ */
+
+#learn-more {
+	background: #151515;
+	padding-top: 8rem;
+	padding-bottom: 7.2rem;
+}
+
+.learn-more {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 3.6rem;
+	position: relative;
+}
+
+.learn-more h1 {
+	font-family: "poppins-semibold", serif;
+	font-size: 3.6rem;
+	color: #ffffff;
+	line-height: 1.25;
+	margin-bottom: 4rem;
+}
+
+.learn-more .button {
+	color: #FFFFFF !important;
+	border-color: rgba(255, 255, 255, 0.3);
+	height: 6rem !important;
+	line-height: 5.4rem !important;
+	padding: 0 3.5rem 0 3rem !important;
+	margin-top: .6rem;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+}
+.learn-more .button:hover, .learn-more .button:focus {
+	border-color: #cc005f;
+}
+.learn-more .button::after {
+	display: inline-block;
+	content: "\f107";
+	font-family: fontAwesome;
+	font-size: 1.6rem;
+	line-height: inherit;
+	text-align: center;
+	position: relative;
+	left: 1.2rem;
+}
+
+/**
+ * ===================================================================
+ * 12. Work
+ *
+ * -------------------------------------------------------------------
+ */
+
+#work {
+	background: #000000;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+}
+
+/* .work {
+	background: #151515;
+	padding-top: 8rem;
+	padding-bottom: 7.2rem;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 3.6rem;
+	position: relative;
+} */
+
+.work h2 {
+	/* font-size: 3.6rem; */
+	color: #ffffff;
+	/* line-height: 1.25; */
+	/* margin-bottom: 4rem; */
+}
+
+.work h3 {
+	/* font-size: 2rem; */
+	color: #ffffff;
+	/* line-height: 1.25; */
+	/* margin-bottom: 2.5rem; */
+}
+
+/* .work img {
+	height: 9rem;
+	width: 9rem;
+	border-radius: 50%;
+	margin: .9rem 0 0 0;
+	float: left;
+} */
+
+/* .work .lead {
+	text-align: left;
+	padding-left: 13rem;
+} */
+
+/**
+ * ===================================================================
+ * 12. Education
+ *
+ * -------------------------------------------------------------------
+ */
+
+ #education {
+	background: #ffffff;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+}
+
+/**
+ * ===================================================================
+ * 12. publication
+ *
+ * -------------------------------------------------------------------
+ */
+
+ #publications {
+	background: #000000;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+}
+
+.publications h2, .publications h3 {
+	/* font-size: 3.6rem; */
+	color: #ffffff;
+	/* line-height: 1.25; */
+	/* margin-bottom: 4rem; */
+}
+
+/**
+ * ===================================================================
+ * 12. publication
+ *
+ * -------------------------------------------------------------------
+ */
+
+ #teaching {
+	background: #ffffff;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+}
+
+/**
+ * ===================================================================
+ * 12. publication
+ *
+ * -------------------------------------------------------------------
+ */
+
+ #hobbies {
+	background: #000000;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+}
+
+.hobbies h2, .hobbies h3 {
+	/* font-size: 3.6rem; */
+	color: #ffffff;
+	/* line-height: 1.25; */
+	/* margin-bottom: 4rem; */
+}
+
+/**
+ * ===================================================================
  * 12. resume - (_layout.scss)
  *
  * -------------------------------------------------------------------
@@ -1651,7 +1956,19 @@ header .logo a {
 #resume .timeline-block {
 	position: relative;
 	padding-top: 1.5rem;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
+#resume .timeline-block:hover {
+	transform: scale(1.08);
+}
+#resume .timeline-block p {
+	color: #6e6e6e;
+}
+
 #resume .timeline-ico {
 	height: 4.8rem;
 	width: 4.8rem;
@@ -1679,6 +1996,9 @@ header .logo a {
 }
 #resume .timeline-header h3 {
 	margin-bottom: 0;
+}
+#resume .timeline-header h5 {
+	color:#ff0077;
 }
 #resume .timeline-header p {
 	font-family: "poppins-regular", sans-serif;
@@ -1780,6 +2100,49 @@ header .logo a {
 	}
 }
 
+/* Tooltip text */
+/* .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+
+} */
+  /* Position the tooltip text - see examples below! */
+
+/* Show the tooltip text when you mouse over the tooltip container */
+/* .tooltip:hover .tooltiptext {
+  visibility: visible;
+} */
+
+.tooltip {
+	text-decoration:none;
+	position:relative;
+}
+.tooltip .tooltiptext {
+	display:none;
+	width: 8em;
+  background-color: rgb(0, 0, 0);
+	font-family: "poppins-semibold", sans-serif;
+  color: #ff0077;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 10px;
+	font-weight: bolder;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+	display:block;
+	position:fixed;
+	overflow:hidden;
+}
 
 /**
  * ===================================================================
@@ -2029,11 +2392,14 @@ header .logo a {
 	padding-bottom: 9rem;
 	text-align: center;
 }
+#cta h5 {
+	color: #ff0077;
+}
 #cta p.lead {
 	color: #6e6e6e;
 }
 .cta-content {
-	max-width: 640px;
+	max-width: 65%;
 }
 .cta-thumb {
 	display: inline-block;
@@ -2418,10 +2784,23 @@ header .logo a {
 .contact-info .icon {
 	margin-bottom: 2.1rem;
 }
+
 .contact-info .icon i {
 	font-size: 4.2rem;
-	color: #FFFFFF;
+	color: #ffffff78;
+	/* color: #FFFFFF; */
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
+
+.contact-info .icon i:hover, .contact-info i:focus {
+	color: #FFFFFF;
+	/* color: #cc005f; */
+}
+
 .contact-info h5 {
 	color: #FF0077;
 }
@@ -2521,6 +2900,11 @@ footer .footer-social li {
 footer .footer-social li a {
 	color: #FFFFFF;
 }
+
+.footer-social li a:hover, .footer-social li a:focus {
+	color: #cc005f;
+}
+
 footer .copyright span {
 	display: inline-block;
 }
