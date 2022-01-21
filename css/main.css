@@ -2155,6 +2155,24 @@ header .logo a {
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 }
+#portfolio ul.no-bullets {
+	list-style-type: none;
+}
+#portfolio ul li:not(:first-child) {
+	margin-left: 2em;
+}
+#portfolio ul li {
+	display: inline-block;
+}
+#portfolio ul li a, #portfolio ul li a:visited {
+	color: black;
+}
+#portfolio ul li a:hover, #portfolio ul li a:focus {
+	color:#ff0077;
+}
+#portfolio ul.no-bullets li i {
+	padding-right: 0.5em;
+}
 #portfolio .folio-item {
 	padding: 0;
 	position: relative;
@@ -2168,7 +2186,10 @@ header .logo a {
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-
+#portfolio img.cover-letter-dear {
+	width: 80%;
+	max-width: 500px;
+}
 #portfolio .overlay {
 	position: absolute;
 	top: 0;
