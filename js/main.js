@@ -118,13 +118,21 @@
 	/*----------------------------------------------------*/
 	/*	Modal Popup
 	------------------------------------------------------*/
-   $('.item-wrap a').magnificPopup({
+	$('.item-wrap a').magnificPopup({
 
       type:'inline',
       fixedContentPos: false,
       removalDelay: 300,
       showCloseBtn: false,
-      mainClass: 'mfp-fade'
+      mainClass: 'mfp-fade',
+			callbacks: {
+				open: function() {
+					$('body').css('overflow', 'hidden');
+				},
+				close: function() {
+					$('body').css('overflow', '');
+				}
+			}
 
    });
 
