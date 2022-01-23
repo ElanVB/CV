@@ -2423,7 +2423,19 @@ img#love {
 	bottom: 10%;
 	left: 10%;
 }
-
+img#welcome {
+	/* text-align: center; */
+	/* top: 25%; */
+	/* right: 25%; */
+	width: 60%;
+	display: inline-block;
+	position: relative;
+}
+@media only screen and (max-width:600px) {
+	img#welcome {
+		width: 100%;
+	}
+}
 
 /* #intro {
 	background: url(../images/butterflies.gif), url(../images/dragon.gif), url(../images/king.gif), url(../images/forest.jpg);
