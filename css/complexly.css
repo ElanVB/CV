@@ -1392,7 +1392,7 @@ header .logo a {
  * -------------------------------------------------------------------
  */
 #intro {
-	background: url(../images/dragon.gif), url(../images/king.gif), url(../images/9zly_8ztc_210511.jpg);
+	background: url(../images/dragon.gif), url(../images/king.gif), url(../images/forest.jpg);
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	background-position: 85% 15%, 40% 75%, center bottom;
 	-webkit-background-size: 20%, 25%, cover;
