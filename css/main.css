@@ -1930,7 +1930,7 @@ header .logo a {
 	padding-bottom: 12rem;
 }
 
-#resume .resume-header {
+/* #resume .resume-header {
 	text-align: center;
 }
 #resume .resume-header h2 {
@@ -2030,7 +2030,215 @@ header .logo a {
 	position: absolute;
 	left: 0;
 	bottom: 0;
+} */
+
+.resume-header {
+	text-align: center;
 }
+.resume-header h2 {
+	color: #FF0077;
+}
+
+.resume-timeline {
+	max-width: 75%;
+	/* max-width: 980px; */
+}
+.timeline-wrap {
+	position: relative;
+	margin-top: 1.5rem;
+	margin-bottom: 6rem;
+}
+.item-wrap {
+	display: block;
+	height: max-content;
+	overflow: overlay;
+	padding-bottom: 1em;
+}
+.timeline-wrap::before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	left: 35%;
+	top: 0;
+}
+.timeline-block {
+	position: relative;
+	padding-top: 1.5rem;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.timeline-block:hover {
+	transform: scale(1.08);
+	/* margin-bottom: ; */
+}
+.timeline-block p {
+	color: #6e6e6e;
+}
+
+.timeline-ico {
+	height: 4.8rem;
+	width: 4.8rem;
+	line-height: 4.8rem;
+	background: #313131;
+	border-radius: 50%;
+	text-align: center;
+	color: #FFFFFF;
+	position: absolute;
+	left: 35%;
+	top: .9rem;
+	margin-left: -2.4rem;
+}
+.timeline-ico i {
+	position: relative;
+	left: .05rem;
+	top: .2rem;
+}
+
+.timeline-header {
+	float: left;
+	width: 40%;
+	padding-right: 10%;
+	/* padding-right: 8em; */
+	text-align: right;
+}
+.timeline-header .info-button {
+	font-size: 0.75em;
+}
+.timeline-header h3 {
+	margin-bottom: 0;
+	margin-bottom: 0.1em;
+}
+.timeline-header h5 {
+	color:#ff0077;
+	margin-bottom: 0.1em;
+}
+.timeline-header p {
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1.6rem;
+	color: #888888;
+	margin-bottom: 0.5em;
+}
+.timeline-content {
+	margin-left: 35%;
+	padding-left: 60px;
+}
+.timeline-content h4 {
+	position: relative;
+	padding-bottom: 1.8rem;
+}
+.timeline-content h4::after {
+	content: "";
+	display: block;
+	height: 3px;
+	width: 50px;
+	background: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+/* ========================================= */
+/* .modal-timeline .modal-header */
+/* .modal-timeline {
+	max-width: 980px;
+}
+.modal-timeline .timeline-wrap {
+	position: relative;
+	margin-top: 1.5rem;
+	margin-bottom: 6rem;
+}
+.modal-timeline .timeline-wrap::before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	left: 35%;
+	top: 0;
+}
+.modal-timeline .timeline-block {
+	position: relative;
+	padding-top: 1.5rem;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.modal-timeline .timeline-block:hover {
+	transform: scale(1.08);
+}
+.modal-timeline .timeline-block p {
+	color: #6e6e6e;
+}
+
+.modal-timeline .timeline-ico {
+	height: 4.8rem;
+	width: 4.8rem;
+	line-height: 4.8rem;
+	background: #313131;
+	border-radius: 50%;
+	text-align: center;
+	color: #FFFFFF;
+	position: absolute;
+	left: 35%;
+	top: .9rem;
+	margin-left: -2.4rem;
+}
+.modal-timeline .timeline-ico i {
+	position: relative;
+	left: .05rem;
+	top: .2rem;
+}
+
+.modal-timeline .timeline-header {
+	float: left;
+	width: 40%;
+	padding-right: 90px;
+	text-align: right;
+}
+.modal-timeline .timeline-header .info-button {
+	font-size: 0.75em;
+}
+.modal-timeline .timeline-header h3 {
+	margin-bottom: 0;
+	margin-bottom: 0.1em;
+}
+.modal-timeline .timeline-header h5 {
+	color:#ff0077;
+	margin-bottom: 0.1em;
+}
+.modal-timeline .timeline-header p {
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1.6rem;
+	color: #888888;
+	margin-bottom: 0.5em;
+}
+.modal-timeline .timeline-content {
+	margin-left: 35%;
+	padding-left: 60px;
+}
+.modal-timeline .timeline-content h4 {
+	position: relative;
+	padding-bottom: 1.8rem;
+}
+.modal-timeline .timeline-content h4::after {
+	content: "";
+	display: block;
+	height: 3px;
+	width: 50px;
+	background: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+} */
 
 /**
  * responsive:
