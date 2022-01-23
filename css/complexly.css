@@ -1610,10 +1610,16 @@ header .logo a {
 	margin-left: -30px;
 }
 .intro-info img {
-	/* height: 9rem;
-	width: 9rem; */
-	height: 10em;
-	width: 10em;
+	/* height: 10em;
+	width: 10em; */
+
+	height: 15em;
+	width: 15em;
+
+	position: absolute;
+	left: -20%;
+	top: 25%;
+
 	border-radius: 50%;
 	margin: 1em;
 	/* margin: .9rem 0 0 0; */
@@ -1646,7 +1652,7 @@ header .logo a {
 
 .intro-info .lead {
 	text-align: left;
-	padding-left: 10em;
+	padding-left: 8em;
 	/* padding-left: 13rem; */
 }
 
@@ -1710,13 +1716,21 @@ header .logo a {
 		margin-left: 0;
 	}
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1024px) {
 	.intro-info img {
-		height: 7.8rem;
-		width: 7.8rem;
+		/* height: 7.8rem;
+		width: 7.8rem; */
+		/* height: 10em;
+		width: 10em; */
+		position: relative;
+		left: 0%;
+		width: 60%;
+		height: auto;
+		float: none;
+		display: inline-block;
 	}
 	.intro-info .lead {
-		padding-left: 11rem;
+		padding-left: 0;
 	}
 	.about-content h3 {
 		text-align: center;
@@ -1738,8 +1752,14 @@ header .logo a {
 		margin-top: 3rem;
 	}
 	.intro-info img {
-		height: 6.6rem;
-		width: 6.6rem;
+		/* height: 6.6rem;
+		width: 6.6rem; */
+		/* height: 10em;
+		width: 10em; */
+		left: 0%;
+		position: relative;
+		width: 60%;
+		height: auto;
 		float: none;
 		display: inline-block;
 	}
@@ -2375,17 +2395,11 @@ header .logo a {
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 	position: relative;
-	/* z-index: -3; */
 }
 img.background {
 	position: absolute;
 	width: 10%;
-	/* width: 10em; */
 	height: auto;
-	/* z-index: 0; */
-	/* z-index: -1; */
-	/* background: white; */
-	/* opacity: .5; */
 }
 
 img#sing {
@@ -2424,9 +2438,6 @@ img#love {
 	left: 10%;
 }
 img#welcome {
-	/* text-align: center; */
-	/* top: 25%; */
-	/* right: 25%; */
 	width: 60%;
 	display: inline-block;
 	position: relative;
@@ -2437,34 +2448,15 @@ img#welcome {
 	}
 }
 
-/* #intro {
-	background: url(../images/butterflies.gif), url(../images/dragon.gif), url(../images/king.gif), url(../images/forest.jpg);
-	background-repeat: no-repeat;
-	background-position: center bottom, 85% 15%, 40% 75%, center bottom;
-	-webkit-background-size: 100%, 20%, 25%, cover;
-	-moz-background-size: 100%, 20%, 25%, cover;
-	background-size: 100%, 20%, 25%, cover;
-	background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-	min-height: 720px;
-	display: table;
-	position: relative;
-	text-align: center;
-} */
-/* test {
-	background: url(../images/sing.gif);
-	background: url(../images/ufo.gif);
-	background: url(../images/soccer.gif);
-	background: url(../images/dance.gif);
-	background: url(../images/horse.gif);
-	background: url(../images/crash_course.gif);
-	background: url(../images/love.gif);
-	background: url(../images/shrug.gif);
-} */
+@media only screen and (max-width:768px) {
+	img#sing, img#ufo, img#shrug, img#soccer, img#dance, img#horse, img#crash-course, img#love {
+		display: none;
+	}
+}
 
 #portfolio ul.no-bullets {
 	list-style-type: none;
+	margin-left: 0;
 }
 #portfolio ul li:not(:first-child) {
 	margin-left: 2em;
@@ -2472,6 +2464,17 @@ img#welcome {
 #portfolio ul li {
 	display: inline-block;
 }
+@media only screen and (max-width:1156px) {
+	#portfolio ul li:not(:first-child) {
+		margin-left: 0;
+	}
+	#portfolio ul li {
+		display: block;
+	}
+}
+/* @media only screen and (max-width:600px) {
+
+} */
 #portfolio ul li a, #portfolio ul li a:visited {
 	color: black;
 }
