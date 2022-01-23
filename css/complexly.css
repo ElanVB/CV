@@ -2764,6 +2764,19 @@ img#welcome {
 	width: 7.8rem;
 	border-radius: 50%;
 }
+.cta-content a {
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.cta-content a:visited:not(.button) {
+	color: black;
+}
+.cta-content p.lead a:hover, .cta-content a:focus {
+	color: #ff0077;
+}
 
 /**
  * section ads - (_layout.scss)
