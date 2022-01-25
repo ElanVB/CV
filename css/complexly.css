@@ -2183,6 +2183,13 @@ header .logo a {
 	margin-left: 35%;
 	padding-left: 60px;
 }
+.timeline-content a, .timeline-content a:visited {
+	color: black;
+}
+.timeline-content a:hover, .timeline-content a:focus {
+	color: #ff0077;
+}
+
 .timeline-content h4 {
 	position: relative;
 	padding-bottom: 1.8rem;
@@ -2483,6 +2490,16 @@ img#welcome {
 	img#sing, img#ufo, img#shrug, img#soccer, img#dance, img#horse, img#crash-course, img#love {
 		display: none;
 	}
+}
+
+#portfolio .section-intro .lead a,
+#portfolio .section-intro .lead a:visited {
+	color: black;
+}
+
+#portfolio .section-intro .lead a:hover,
+#portfolio .section-intro .lead a:focus {
+	color: #ff0077;
 }
 
 #portfolio ul.no-bullets {
