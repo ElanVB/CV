@@ -2084,8 +2084,11 @@ header .logo a {
 }
 
 .resume-timeline {
-	max-width: 75%;
-	/* max-width: 980px; */
+	width: 100%;
+	/* max-width: 75%;
+	padding-left: 10%;
+	padding-right: 10%;
+	max-width: 980px; */
 }
 .timeline-wrap {
 	position: relative;
@@ -2097,6 +2100,8 @@ header .logo a {
 	height: max-content;
 	overflow: overlay;
 	padding-bottom: 1em;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 .timeline-wrap::before {
 	content: "";
@@ -2105,7 +2110,7 @@ header .logo a {
 	height: 100%;
 	background: rgba(0, 0, 0, 0.1);
 	position: absolute;
-	left: 35%;
+	left: 38%;
 	top: 0;
 }
 .timeline-block {
@@ -2679,13 +2684,14 @@ img#welcome {
 } */
 .popup-modal .description-box h4 {
 	font-family: "poppins-bold", sans-serif;
-	font-size: 1.5rem;
+	/* font-size: 1.5rem; */
 	line-height: 2.4rem;
 	margin-bottom: .6rem;
 }
 .popup-modal .description-box p {
 	font-family: "poppins-regular", sans-serif;
-	font-size: 1.4rem;
+	font-size: 1.7rem;
+	/* font-size: 1.4rem; */
 	line-height: 2.4rem;
 	margin-bottom: 12px;
 	margin-left: auto;
