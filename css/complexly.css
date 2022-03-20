@@ -2423,6 +2423,67 @@ header .logo a {
 } */
 
 /**
+ * =========================================================================
+ * =========================================================================
+ */
+
+ #summaries {
+	background: #151515;
+	/* padding-top: 12rem; */
+	/* padding-bottom: 7.2rem; */
+}
+#summaries .section-intro {
+	margin-bottom: 0;
+}
+#summaries .section-intro h1 {
+	color: white;
+}
+#summaries .section-intro h5 {
+	color: #FF0077;
+}
+#summaries .section-intro p {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.summaries-info {
+	margin: 4.8rem auto 0;
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.summaries-info .collapse {
+	padding: 0;
+}
+.summaries-info .icon {
+	margin-bottom: 2.1rem;
+}
+
+.summaries-info .icon i {
+	font-size: 4.2rem;
+	color: #ffffff78;
+	/* color: #FFFFFF; */
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.summaries-info .icon i:hover, .summaries-info i:focus {
+	color: #FFFFFF;
+	/* color: #cc005f; */
+}
+
+.summaries-info h5 {
+	color: #FF0077;
+}
+/**
+ * =========================================================================
+ * =========================================================================
+ */
+
+
+/**
  * ===================================================================
  * 13. portfolio - (_layout.scss)
  *
@@ -3111,8 +3172,8 @@ img#welcome {
  */
 #contact {
 	background: #151515;
-	/* padding-top: 12rem; */
-	/* padding-bottom: 7.2rem; */
+	padding-top: 12rem;
+	padding-bottom: 7.2rem;
 }
 #contact .section-intro {
 	margin-bottom: 0;
