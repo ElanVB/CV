@@ -44,17 +44,77 @@
 	/*---------------------------------------------------- */
 	/* Owl Carousel
 	------------------------------------------------------ */
+
 	$("#owl-slider").owlCarousel({
         navigation: false,
         pagination: true,
         itemsCustom : [
 	        [0, 1],
-	        [700, 2],
-	        [960, 3]
+	        [700, 2]
+	        // [960, 3]
 	     ],
         navigationText: false
     });
 
+
+	/*---------------------------------------------------- */
+	/* Accordion (Summaries)
+	------------------------------------------------------ */
+	var accordionButton = $('.accordion');
+	// var nav = $('.main-navigation');
+	// var down = false;
+
+	// toggle button
+	accordionButton.on('click', function(e) {
+		e.preventDefault();
+
+		var button = $(this);
+		var thisButtonActive = button.text() == "Read Less -";
+
+		// toggle all active accordions (close them)
+		var actives = $(".accordion-active");
+		actives.slideToggle({
+			duration: 600,
+			easing: "linear"
+		});
+
+		actives.each(function() {
+			var section = $(this);
+			var buttonTitle = section.attr("id");
+			$("a[title='" + buttonTitle + "']").html("Read More +");
+		});
+		actives.toggleClass("accordion-active");
+
+		// if this button is the active one, just collapse
+		if (!thisButtonActive) {
+			// open the correct accordion
+			button.html("Read Less -");
+			var summaryId = button.attr("title");
+			// var summaryId = this.id;
+			var summarySection = $("#" + summaryId);
+
+			summarySection.toggleClass('accordion-active');
+			summarySection.slideToggle({
+				duration: 600,
+				easing: "linear"
+			});
+		}
+
+
+		// if (down) {
+		// 	nav.slideToggle({
+		// 		duration: 300,
+		// 		easing: "linear"
+		// 	});
+		// } else {
+		// 	nav.slideToggle({
+		// 		duration: 300,
+		// 		easing: "linear"
+		// 	});
+		// }
+
+		// down = !down;
+	});
 
 	/*----------------------------------------------------- */
 	/* Alert Boxes
