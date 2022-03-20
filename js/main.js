@@ -178,7 +178,7 @@
 	/*----------------------------------------------------*/
 	/*	Modal Popup
 	------------------------------------------------------*/
-	$('.item-wrap a').magnificPopup({
+	$('.item-wrap a[href^="#modal"]').magnificPopup({
 
       type:'inline',
       fixedContentPos: false,
