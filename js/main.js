@@ -81,7 +81,11 @@
 		actives.each(function() {
 			var section = $(this);
 			var buttonTitle = section.attr("id");
-			$("a[title='" + buttonTitle + "']").html("Read More +");
+			var button = $("a[title='" + buttonTitle + "']");
+			button.html("Read More +");
+			button.attr("href", "#writing-samples");
+			// button.attr("href", "#summaries");
+
 		});
 		actives.toggleClass("accordion-active");
 
@@ -89,6 +93,8 @@
 		if (!thisButtonActive) {
 			// open the correct accordion
 			button.html("Read Less -");
+			button.attr("href", "#summaries");
+			// button.attr("href", "#writing-samples");
 			var summaryId = button.attr("title");
 			// var summaryId = this.id;
 			var summarySection = $("#" + summaryId);
