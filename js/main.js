@@ -46,12 +46,21 @@ function main() {
 	/* Owl Carousel
 	------------------------------------------------------ */
 		$(".owl-slider").owlCarousel({
-			items: 2,
+			// items: 2,
 			loop: true,
 			autoplay: true,
 			autoplayTimeout: 2000,
 			autoplayHoverPause: true,
-			nav: true
+			nav: true,
+			responsiveClass: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				650: {
+					items: 2
+				}
+			}
 		});
 
 		$(".single-owl-slider").owlCarousel({

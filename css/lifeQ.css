@@ -2510,6 +2510,37 @@ header .logo a {
  * =========================================================================
  * =========================================================================
  */
+ @media only screen and (max-width:768px) {
+	#portfolio i.no-mobile {
+		display: none;
+	}
+	#portfolio span.no-mobile {
+		display: none;
+	}
+
+	#about i.no-mobile {
+		display: none;
+	}
+	#about span.no-mobile {
+		display: none;
+	}
+
+	#resume i.no-mobile {
+		display: none;
+	}
+	#resume span.no-mobile {
+		display: none;
+	}
+}
+
+ @media only screen and (max-width:650px) {
+	i.no-mobile {
+		display: none;
+	}
+	span.no-mobile {
+		display: none;
+	}
+}
 
 /**
  * ===================================================================
@@ -2646,10 +2677,10 @@ i#ufo {
 }
 span#shrug {
 	top: 45%;
-	left: 5%;
+	left: 2%;
 }
 i#soccer {
-	bottom: 5%;
+	bottom: 2%;
 	right: 30%;
 	font-size: 400%;
 }
@@ -2659,26 +2690,26 @@ span#dance {
 }
 span#devices {
 	top: 55%;
-	right: 10%;
+	right: 5%;
 }
 i#walking {
-	bottom: 10%;
+	bottom: 3%;
 	left: 10%;
 }
 i#stopwatch {
 	top: 30%;
-	right: 10%;
+	right: 1%;
 }
 i#brain {
 	top: 5%;
-	left: 10%;
+	left: 5%;
 }
 i#heart-pulse {
 	bottom: 35%;
-	left: 10%;
+	left: 5%;
 }
 span#contactless {
-	bottom: 4.3%;
+	bottom: 1%;
 	right: 30%;
 }
 img#contact-blob {
