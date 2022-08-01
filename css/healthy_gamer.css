@@ -3046,25 +3046,20 @@ img#welcome {
 }
 
 /* pagination */
-.owl-pagination {
-	text-align: center;
-	width: 100%;
-	margin: .6rem 0 0;
+.owl-theme .owl-nav [class*='owl-'] {
+	border-radius: 2em;
 }
-.owl-theme .owl-controls .owl-page {
-	display: inline-block;
+.owl-theme .owl-nav [class*='owl-'] span {
+	font-size: 3em;
+	color: white;
 }
-.owl-theme .owl-controls .owl-page span {
-	display: block;
-	width: 1.2rem;
-	height: 1.2rem;
-	margin: 1.2rem .8rem 0 .8rem;
-	border-radius: 50%;
-	display: inline-block;
-	background: #FFFFFF;
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+	background: #2495d29f;
 }
-.owl-theme .owl-controls .owl-page.active span {
-	background: #06ba4f;
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: #2494d2;
 }
 
 #services .action {
