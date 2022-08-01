@@ -672,20 +672,25 @@
                         <h3>Machine Learning</h3>
 
                         <p class="desc">
-                            Bash: Parallel experiment execution, monitoring (research enabling infrastructure)
-                            Pytorch, Tensorflow, Keras: ML training, create and implement new models,
-                            optimize code and model robustness and efficiency (reduced runtime of experiemnts from days to hours, or even months to days - seperate cases, had to program things to handle loadshedding)
-                            embedded programming (not ML models)
-                            - Scikit
-                            - Tensorflow
-                            - PyTorch
-                            - Pandas (haven't used that much because I generally just use Numpy but I'm a quick learner)
-                            - Numpy
-                            Set up own small 3 PC cluster
-                            Used 30 PC university cluster
-
-                            what projects show this?
-                            Colab with Wits
+                            <!-- I have worked on many machine learning projects and
+                            learned about all parts of the workflow. -->
+                            I have used libraries like PyTorch, Keras, and TensorFlow
+                            to create and train custom models.
+                            Other libraries like NumPy, SciPy and scikit-learn let me rapidly prototype ideas.
+                            I have also used Bash to allow a 30 computer cluster to collaborate on and multi-thread experiments.
+                            I have used Git for version control for over a decade.
+                            <!-- <br><br>
+                            In one of my projects we trained over 12 000 neural networks.
+                            To make this possible I identified and optimised the main bottlenecks in the pipeline.
+                            For instance, we used the code from some researchers at Google as a base for our experiments.
+                            But, their code took almost 2 days to run on one of our computers.
+                            So, I optimised their code until it took only 2 hours to run. -->
+                            <!-- <br><br> -->
+                            <!-- We also had access to a cluster of 30 computers that we used for experiments.
+                            The simplest implementation that trained the 12 000 networks took over a month to complete.
+                            Because we needed results more quickly than this, I wrote code to train multiple networks at the same time on each computer.
+                            I also made the computers draw tasks from a shared queue.
+                            This reduced the time it took to train all 12 000 networks to only a few days. -->
                         </p>
 
 
@@ -703,14 +708,19 @@
                         <h3>Research</h3>
 
                         <p class="desc">
-                            Data analysis and visualisation (Numpy, Matplotlib, R)
-                            new algorithms (Python, )
-                            Version control (git)
-                            Signal processing (Python, numpy)
+                            My main research focused on foundational theory of neural networks.
+                            I learned to communicate complex ideas in writing and through visualisations by being a co-author on 10 machine learning publications.
+                            I used NumPy to make theoretical predictions, analyse results, and for signal processing.
 
-                            what projects show this?
-                            master's
-                            systems and signals
+                            <!-- My main research focused on foundational theory of neural networks.
+                            I investigated how we can preserve input information throughout deep stochastically regularised models.
+
+                            Being a co-author on 10 machine learning publications taught me to communicate complex ideas in writing.
+
+                            I used Python libraries like NumPy to make theoretical predictions and analyse results of experiments.
+                            I used libraries like Matplotlib to make meaningful visualisations of results.
+
+                            I have also used tools like NumPy's fast Fourier transform to do signal processing. -->
                         </p>
                     </div>
 
@@ -726,17 +736,8 @@
                         <h3>Programming competitions</h3>
 
                         <p class="desc">
-                            algorithms and data structures
-                            MCTS, graph search, sorting,
-                            Java, Python, C, C++, Javascipt,
-                            memory vs time efficiency trade off
-
-                            computing architectures?
-                            programing paradeigms?
-
-                            what projects show this?
-                            CodinGame bots and puzzle solutions
-
+                            I learned classical computer science skills, like creating efficient algorithms and data structures, by competing in programming competitions.
+                            I have competed in international competitions like Google's Code Jam and CodinGame's Smash The Code.
                         </p>
                     </div>
 
@@ -757,10 +758,10 @@
                             Machine Learning
                         </a>
                     </h1>
-                    <h5>Machine Learning</h5>
+                    <!-- <h5>Machine Learning</h5>
                     <p class="lead">
 
-                    </p>
+                    </p> -->
                 </div>
             </div>
 
@@ -852,7 +853,7 @@
                         </div>
                     </div>
 
-                    <div class="service">
+                    <!-- <div class="service">
                         <span class="icon"><i class="fa-solid fa-heart-pulse"></i></span>
                         <div class="service-content">
                             <h3>Train Loop Monitoring</h3>
@@ -862,7 +863,7 @@
                             </p>
                             <img src="images/coding/ML/python/train_epoch.png">
                         </div>
-                    </div>
+                    </div> -->
                 </div> <!-- /services-list -->
             </div> <!-- /services-content -->
         </div>
@@ -875,10 +876,10 @@
                             Research
                         </a>
                     </h1>
-                    <h5>Research</h5>
+                    <!-- <h5>Research</h5>
                     <p class="lead">
 
-                    </p>
+                    </p> -->
                 </div>
             </div>
 
@@ -890,11 +891,24 @@
                         <div class="service-content">
                             <h3>Visualisation of results</h3>
                             <p class="desc">
-                                * Testing on multiple data sets
+                                To make sure our results were robust and general, I ran experiments on multiple data sets.
+                                I often wanted to evaluate how accurately my theoretical predictions matched experiment results.
+                                My first comparison method was usually to plot the predictions and results together and do a visual inspection.
+                                <br><br>
+                                For instance, the cyan lines in the below figure shows how deep we predict information can travel in neural networks.
+                                The heatmap then shows how close information at each layer is to being lost through numeric under or overflow.
+                                <br><br>
+                                The dashed vertical line shows that information will travel arbitrarily deep if networks are initialised correctly.
+                                I felt it was important to be able to compare this to what would happen if someone did not initialise their network correctly.
+                                So, I depicted the depths of the 2 most common initialisations using more vertical dashed lines.
+                                <br><br>
+                                I took care to represent as much information as clearly as possible when visualising results.
+
+                                <!-- * Testing on multiple data sets
                                 * Comparing theoretical predictions to emperical results
                                 * Information dense and interpretable (colour maps)
                                 * References / comparisons to known quantities
-                                * How information travels through untrained networks that use Dropout
+                                * How information travels through untrained networks that use Dropout -->
 
                             </p>
                             <img src="images/coding/research/variance_depth.png">
@@ -906,9 +920,12 @@
                         <div class="service-content">
                             <h3>Visualisation of results</h3>
                             <p class="desc">
-                                * Comparing theoretical predictions to emperical results
+                                I often wanted to give more information about how accurate our theoretical predictions were.
+                                In some cases, like the figure below, I plotted the predictions as solid lines, then overlaid dots that represented means and shaded regions that represented the first standard deviation of empirical measurements.
+
+                                <!-- * Comparing theoretical predictions to emperical results
                                 * Information dense and interpretable (means, standard deviations, labels)
-                                * How information travels through untrained networks that use Dropout and other noise-reg
+                                * How information travels through untrained networks that use Dropout and other noise-reg -->
                             </p>
                             <img src="images/coding/research/correlation.png">
                             <!-- <img src="images/coding/research/generalisation_depth.png"> -->
@@ -918,9 +935,25 @@
                     <div class="service">
                         <span class="icon"><i class="fa-solid fa-share-nodes"></i></span>
                         <div class="service-content">
+                            <h3>Visualisation of results</h3>
+                            <p class="desc">
+                                There were also times when I wanted to learn more than the mean and standard deviation of measurements.
+                                In cases like the figure below, I plotted the distribution of results and marked key statistics.
+                                For instance, I marked the mean with a grey and white dashed line and marked (and ranked) all modes with black dashed lines.
+                                I could then use this information to make conclusions like: "using dropout decreases the average performance of networks (if training time is not increased)", "Moderate levels of dropout increases both best and most likely performance of networks", and "when dropout levels are too high, network performance decreases".
+                            </p>
+                            <img src="images/coding/research/test_acc_dropout.png">
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <span class="icon"><i class="fa-solid fa-share-nodes"></i></span>
+                        <div class="service-content">
                             <h3>Visualisation of methodology</h3>
                             <p class="desc">
-                                pipeline
+                                One of my main roles was to plan the methodology of experiments.
+                                I found that visual aids could help explain these processes.
+                                The figure below is an example where I showed how I created a class of networks, randomly sampled network architectures from this class, and then ran multiple experiments on each sample.
                             </p>
                             <img src="images/coding/research/RCT_setup.png">
                         </div>
@@ -929,20 +962,12 @@
                     <div class="service">
                         <span class="icon"><i class="fa-solid fa-share-nodes"></i></span>
                         <div class="service-content">
-                            <h3>Definition of key algorithms</h3>
-                            <p class="desc">
-                                pipeline
-                            </p>
-                            <img src="images/coding/research/algorithm.png">
-                        </div>
-                    </div>
-
-                    <div class="service">
-                        <span class="icon"><i class="fa-solid fa-share-nodes"></i></span>
-                        <div class="service-content">
                             <h3>Visualisation of methodology</h3>
                             <p class="desc">
-                                pipeline
+                                In a few of my research projects I wanted to investigate how initialisation of networks affects their performance.
+                                The space of possible initialisations has continuous dimensions, meaning that I could not test all possible cases.
+                                So, I developed ways of testing certain parts of the space that would likely give important information.
+                                I first made a graphical representation of this method, shown below.
                             </p>
                             <img src="images/coding/research/init_sampling.png">
                         </div>
@@ -951,13 +976,13 @@
                     <div class="service">
                         <span class="icon"><i class="fa-solid fa-share-nodes"></i></span>
                         <div class="service-content">
-                            <h3>Visualisation of results</h3>
+                            <h3>Definition of key algorithms</h3>
                             <p class="desc">
-                                * Distribution of results
-                                * Key statistics
-                                * Comparison
+                                In some cases I developed algorithms that were important to my research.
+                                I carefully documented them in my publications with enough detail for others to be able to implement and confirm them.
+                                The algorithm below is the one for the initialisation sampling technique showed on the previous slide.
                             </p>
-                            <img src="images/coding/research/test_acc_dropout.png">
+                            <img src="images/coding/research/algorithm.png">
                         </div>
                     </div>
 
@@ -970,13 +995,13 @@
                 <div class="col-twelve">
                     <h1 id="comp">
                         <a href="" target="_blank" rel="noopener noreferrer">
-                            Coding Comp
+                            Programming competitions
                         </a>
                     </h1>
-                    <h5>Coding Comp</h5>
+                    <!-- <h5>Programming competitions</h5>
                     <p class="lead">
 
-                    </p>
+                    </p> -->
                 </div>
             </div>
 
@@ -986,9 +1011,13 @@
                     <div class="service">
                         <span class="icon"><i class="fa-solid fa-share-nodes"></i></span>
                         <div class="service-content">
-                            <h3>Pipeline</h3>
+                            <h3>Smash The Code</h3>
                             <p class="desc">
-                                pipeline
+                                CodinGame's Smash The Code competition tasked competitors with creating programs to play a game against other competitor programs.
+                                The game was a blend of Tetris and colour matching games.
+                                Whenever a player makes a group of at least 4 adjacent spheres of the same colour,
+                                the group vanishes and sends spheres to the opponents space to block them.
+                                Chains of groups vanishing in a single turn gives more points and sends more blocking spheres to the opponent.
                             </p>
                             <img src="images/coding/comp/smash_the_code_gif.webp">
                         </div>
@@ -997,9 +1026,9 @@
                     <div class="service">
                         <span class="icon"><i class="fa-solid fa-share-nodes"></i></span>
                         <div class="service-content">
-                            <h3>Pipeline</h3>
+                            <h3>South African placement</h3>
                             <p class="desc">
-                                pipeline
+                                I ranked 1st out of all South African competitors in the Smash The Code competition.
                             </p>
                             <img src="images/coding/comp/SA_placement.png">
                         </div>
@@ -1008,9 +1037,9 @@
                     <div class="service">
                         <span class="icon"><i class="fa-solid fa-share-nodes"></i></span>
                         <div class="service-content">
-                            <h3>Pipeline</h3>
+                            <h3>International placement</h3>
                             <p class="desc">
-                                pipeline
+                                I ranked 72nd out of all 2500+ competitors in the Smash The Code competition.
                             </p>
                             <img src="images/coding/comp/international_placement.png">
                         </div>
@@ -1019,9 +1048,11 @@
                     <div class="service">
                         <span class="icon"><i class="fa-solid fa-share-nodes"></i></span>
                         <div class="service-content">
-                            <h3>Pipeline</h3>
+                            <h3>Algorithms</h3>
                             <p class="desc">
-                                pipeline
+                                I have used many programming language like Python, C, C++, Java, and Javascipt.
+                                I used search and sorting algorithms like binary search, breadth first search, quick sort, and merge sort in competitions and real-life applications.
+                                I especially enjoy when I used concepts I learned from these algorithms to design new algorithms to solve unique problems.
                             </p>
                             <img src="images/coding/comp/DFS_condensed.png">
                         </div>
@@ -1030,9 +1061,11 @@
                     <div class="service">
                         <span class="icon"><i class="fa-solid fa-share-nodes"></i></span>
                         <div class="service-content">
-                            <h3>Pipeline</h3>
+                            <h3>Data structures</h3>
                             <p class="desc">
-                                pipeline
+                                We often need to trade memory usage for computation efficiency.
+                                Because of this, I have learned a lot about data structures like queues, trees, graphs, and has tables (sets).
+                                Using a data structure that matches the task usually lets us use a more computationally efficient and simple algorithm.
                             </p>
                             <img src="images/coding/comp/org_env_data_structures_graphic.png">
                         </div>
@@ -1041,9 +1074,11 @@
                     <div class="service">
                         <span class="icon"><i class="fa-solid fa-share-nodes"></i></span>
                         <div class="service-content">
-                            <h3>Pipeline</h3>
+                            <h3>Simulation</h3>
                             <p class="desc">
-                                pipeline
+                                Many interesting optimisation problems need us to find a sequence of actions and simulate some environment.
+                                I have learned how to evaluate states, perform Monte-Carlo searches, and use genetic algorithms to find solutions to these sorts of problems.
+                                This is actually how I learned about reinforcement learning and then machine learning in general.
                             </p>
                             <img src="images/coding/comp/score.png">
                         </div>

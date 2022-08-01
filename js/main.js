@@ -64,7 +64,18 @@ function main() {
 		});
 
 		$('.button.accordion').click(function(){
-			$('.single-owl-slider').trigger('to.owl.carousel', 0)
+			$sliders = $('.single-owl-slider')
+
+			// move to beginning of slides
+			$sliders.trigger('to.owl.carousel', 0)
+
+			// pause autoplay
+			$sliders.trigger('stop.owl.autoplay')
+
+			// start autoplay again after a few seconds
+			setTimeout(function(){
+				$sliders.trigger('play.owl.autoplay',[2000]);
+			}, 2000);
 		});
 
 		/*---------------------------------------------------- */
