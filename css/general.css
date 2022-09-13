@@ -1453,7 +1453,7 @@ header .logo a {
 	margin-bottom: .6rem;
 	margin-left: auto;
 	margin-right: auto;
-	text-shadow: 0 0 20px rgba(36, 210, 71, 0.5);
+	/* text-shadow: 0 0 20px rgba(132, 132, 132, 0.5); */
 	/* text-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
 }
 .intro-content h5 {
@@ -1464,7 +1464,7 @@ header .logo a {
 	margin-bottom: 0;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
-	text-shadow: 0 0 20px rgba(36, 210, 71, 0.5);
+	/* text-shadow: 0 0 20px rgba(36, 210, 71, 0.5); */
 }
 .intro-content .intro-position {
 	font-family: "lora-regular", serif;
@@ -1474,7 +1474,7 @@ header .logo a {
 	letter-spacing: .2rem;
 	color: #ffffff;
 	/* color: #FFFFFF; */
-	text-shadow: 0 0 20px rgba(36, 210, 71, 0.5);
+	/* text-shadow: 0 0 20px rgba(36, 210, 71, 0.5); */
 }
 .intro-content .intro-position span {
 	display: inline-block;
